@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Blood Pressure Diary</string>
+    <string name="input_measure_dialog_header">Создать измерение</string>
+    <string name="input_higher_pressure_hint">Систoлическое (верхнее)</string>
+    <string name="input_lower_pressure_hint">Диастoлическое (нижнее)</string>
+    <string name="input_pulse_hint">Пульс (уд. в мин)</string>
+    <string name="dialog_negative_btn_text">Отмена</string>
+    <string name="dialog_positive_btn_text">ОК</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "889336463221",
+    "project_id": "blood-pressure-diary-af25c",
+    "storage_bucket": "blood-pressure-diary-af25c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889336463221:android:805be325cbea9a2d191d3c",
+        "android_client_info": {
+          "package_name": "catrin.dev.bloodpressurediary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889336463221-fm1ep4l3ll3padn3t1jc3neaeshmfq6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdKjefSMp35kpWSM5hTq-7FblJ1n2YSJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889336463221-fm1ep4l3ll3padn3t1jc3neaeshmfq6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/date_header_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:background="#BCB7B7"
+        android:paddingStart="@dimen/date_header_padding_start"
+        android:textSize="@dimen/measure_item_textviews_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="31 may" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:dividerColor="#BCB7B7"
+        app:layout_constraintBottom_toTopOf="@id/user_data_linear_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_header_textview" />
+
+    <LinearLayout
+        android:id="@+id/user_data_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+        <TextView
+            android:id="@+id/time_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="@dimen/measure_item_textviews_text_size"
+            tools:text="21:39" />
+
+        <TextView
+            android:id="@+id/blood_pressure_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:textSize="@dimen/measure_item_textviews_text_size"
+            android:textStyle="bold"
+            tools:text="121  /  39" />
+
+        <TextView
+            android:id="@+id/pulse_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/measure_item_textviews_text_size"
+            android:textStyle="bold"
+            tools:text="68" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

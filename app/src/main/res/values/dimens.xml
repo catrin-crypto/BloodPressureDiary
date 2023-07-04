@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="measure_item_textviews_text_size">13sp</dimen>
+    <dimen name="date_header_padding_start">20dp</dimen>
+    <dimen name="rv_padding_bottom">100dp</dimen>
+    <dimen name="rv_padding_top">5dp</dimen>
+    <dimen name="dialog_linear_layout_padding">4dp</dimen>
+</resources>

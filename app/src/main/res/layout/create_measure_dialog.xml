@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/dialog_linear_layout_padding"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <TextView
+        android:id="@+id/titleCreateMeasure"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/measure_item_textviews_text_size"
+        android:text="@string/input_measure_dialog_header" />
+
+    <DatePicker
+        android:id="@+id/input_date_picker"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+    <TimePicker
+        android:id="@+id/input_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"/>
+
+    <EditText
+        android:id="@+id/input_higher_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:hint="@string/input_higher_pressure_hint"
+        android:autofillHints="@string/input_higher_pressure_hint" />
+
+    <EditText
+        android:id="@+id/input_lower_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:hint="@string/input_lower_pressure_hint" />
+
+    <EditText
+        android:id="@+id/input_hbpm_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:hint="@string/input_pulse_hint" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/negative_btn_create_measure"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_negative_btn_text"
+            android:textSize="@dimen/measure_item_textviews_text_size" />
+
+        <Button
+            android:id="@+id/positive_btn_create_measure"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_positive_btn_text"
+            android:textSize="@dimen/measure_item_textviews_text_size" />
+    </LinearLayout>
+</LinearLayout>

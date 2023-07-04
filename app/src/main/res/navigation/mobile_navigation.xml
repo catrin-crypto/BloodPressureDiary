@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/fragment_blood_pressure_list">
+<fragment
+    android:id="@+id/fragment_blood_pressure_list"
+    android:name="catrin.dev.bloodpressurediary.presentation.BloodPressureListFragment"
+    tools:layout="@layout/fragment_blood_pressure_list">
+    <action
+        android:id="@+id/action_fragment_blood_pressure_list_to_create_measure_dialog"
+        app:destination="@id/create_measure_dialog" />
+</fragment>
+    <dialog
+        android:id="@+id/create_measure_dialog"
+        android:name="catrin.dev.bloodpressurediary.presentation.CreateMeasureDialog"
+        tools:layout="@layout/create_measure_dialog">
+        <action
+            android:id="@+id/action_create_measure_dialog_to_fragment_blood_pressure_list"
+            app:destination="@id/fragment_blood_pressure_list"
+            app:popUpTo="@+id/fragment_blood_pressure_list"
+            app:popUpToInclusive="true"/>
+    </dialog>
+</navigation>
