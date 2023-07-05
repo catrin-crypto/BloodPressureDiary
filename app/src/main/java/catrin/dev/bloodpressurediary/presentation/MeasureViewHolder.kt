@@ -23,15 +23,14 @@ class MeasureViewHolder(view: View) : RecyclerView.ViewHolder(view){
     fun bind(item: Measure, isDataHeader: Boolean) {
         try {
             with(binding) {
-              //  timeTextview.text = item.time.toString()
                 dateHeaderTextview.visibility =
                     if (isDataHeader) {
                         VISIBLE.also {
                             dateHeaderTextview.text =
-                                item.date.toString()
+                                item.date.toLocalDate().toString()
                         }
                     } else GONE
-                timeTextview.text = item.time.toString()
+                timeTextview.text = item.time.toLocalTime().toString()
                 bloodPressureTextview.text = buildString {
         append(item.higher)
         append("  /  ")

@@ -29,7 +29,7 @@ class CreateMeasureDialog : DialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = ViewModelProvider(this).get(BloodPressureListViewModel::class.java)
+        viewModel = ViewModelProvider(this)[BloodPressureListViewModel::class.java]
         with(binding) {
             inputTimePicker.setIs24HourView(true)
             val cal = Calendar.getInstance()
@@ -50,12 +50,12 @@ class CreateMeasureDialog : DialogFragment() {
     private fun CreateMeasureDialogBinding.okClicked() {
         try {
             val date = with(inputDatePicker) {
-                LocalDate.of(year, month, dayOfMonth)
+                LocalDate.of(year, month + 1, dayOfMonth)
             }
             val time = with(inputTimePicker) { LocalTime.of(hour, minute) }
             viewModel.addMeasure(
                 Measure(
-                    date, time,
+                    date.toInt(), time.toInt(),
                     inputHigherText.text.toString().toInt(),
                     inputLowerText.text.toString().toInt(),
                     inputHbpmText.text.toString().toInt()
@@ -66,6 +66,4 @@ class CreateMeasureDialog : DialogFragment() {
             viewModel.handleError(t)
         }
     }
-
-
 }

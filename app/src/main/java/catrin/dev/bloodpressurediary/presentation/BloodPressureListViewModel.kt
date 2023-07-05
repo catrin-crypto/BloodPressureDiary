@@ -2,8 +2,8 @@ package catrin.dev.bloodpressurediary.presentation
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import catrin.dev.bloodpressurediary.Repo.Repo
-import catrin.dev.bloodpressurediary.Repo.RepoImpl
+import catrin.dev.bloodpressurediary.repo.Repo
+import catrin.dev.bloodpressurediary.repo.RepoImpl
 import catrin.dev.bloodpressurediary.data.AppState
 import catrin.dev.bloodpressurediary.data.Measure
 import catrin.dev.bloodpressurediary.data.ResourceState

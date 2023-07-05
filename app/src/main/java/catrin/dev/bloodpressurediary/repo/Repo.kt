@@ -1,4 +1,4 @@
-package catrin.dev.bloodpressurediary.Repo
+package catrin.dev.bloodpressurediary.repo
 
 import catrin.dev.bloodpressurediary.data.ResourceState
 import catrin.dev.bloodpressurediary.data.Measure

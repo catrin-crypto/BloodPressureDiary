@@ -1,5 +1,6 @@
 package catrin.dev.bloodpressurediary.presentation
 
+import android.annotation.SuppressLint
 import android.util.Log
 import androidx.recyclerview.widget.DiffUtil
 import catrin.dev.bloodpressurediary.data.Measure
@@ -20,6 +21,7 @@ class MeasuresDiffUtil(private val oldList: List<Measure>, private val newList: 
             false
         }
 
+
     override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean =
         try {
             val oldItem: Measure = oldList[oldItemPosition]
@@ -27,7 +29,7 @@ class MeasuresDiffUtil(private val oldList: List<Measure>, private val newList: 
             oldItem.lower == newItem.lower &&
                     oldItem.date == newItem.date &&
                     oldItem.time == newItem.time &&
-                    oldItem.higher == newItem.higher
+                    oldItem.higher == newItem.higher &&
                     oldItem.hbpm == newItem.hbpm
         } catch (t: Throwable) {
             logErr(t)

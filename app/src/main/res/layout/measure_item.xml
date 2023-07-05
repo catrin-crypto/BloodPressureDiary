@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <TextView
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.6"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/grey_text_color"
             android:textSize="@dimen/measure_item_textviews_text_size"
             android:textStyle="bold"
             tools:text="68" />
